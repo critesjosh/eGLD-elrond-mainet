@@ -1,17 +1,17 @@
 module.exports = {
     networks : {
         main: {
-            provider: 'https://api.elrond.com',
-            transactionLink : (hash) => `https://explorer.elrond.com/transactions/${hash}`,
-            walletLink : (address) => `https://explorer.elrond.com/address/${address}`,
+            provider: 'https://forno.celo.org',
+            transactionLink : (hash) => `https://explorer.celo.org/tx/${hash}`,
+            walletLink : (address) => `https://explorer.celo.org/address/${address}`,
             networkName: 'main',
 
         },
         testnet: {
-            provider: 'https://api-testnet.elrond.com',
-            transactionLink : (hash) => `https://testnet-explorer.elrond.com/transactions/${hash}`,
-            walletLink : (address) => `https://testnet-explorer.elrond.com/address/${address}`,
-            networkName: 'testnet',
+            provider: 'https://alfajores-forno.celo-testnet.org',
+            transactionLink : (hash) => `https://alfajores-blockscout.celo-testnet.org/tx/${hash}`,
+            walletLink : (address) => `https://alfajores-blockscout.celo-testnet.org/address/${address}`,
+            networkName: 'alfajores',
         }
     }
 }
